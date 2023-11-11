@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="THÊM SÁCH MỚI"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:textColor="#F44336"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tên sách"
+            android:textSize="25dp"
+            android:textColor="#F44336"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/edt_tensach"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="23dp"
+            android:hint="Nhập tên sách"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tiền"
+            android:textSize="25dp"
+            android:textColor="#F44336"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/edt_tien"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="23dp"
+            android:hint="Nhập tiền"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Loại sách"
+            android:textSize="25dp"
+            android:textColor="#F44336"
+            android:textStyle="bold"/>
+        <Spinner
+            android:id="@+id/spn_loaisach"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

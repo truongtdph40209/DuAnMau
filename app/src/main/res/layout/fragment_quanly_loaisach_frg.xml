@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".quanlyLoaisach_frg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="THÊM LOẠI SÁCH MỚI"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="#F10000" />
+        <EditText
+            android:id="@+id/edt_loaisach"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập tên loại sách"
+            android:textSize="23dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_weight="1"
+            android:id="@+id/btn_themLoaisach"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="#4CAF50"
+            android:layout_marginRight="10dp"
+            android:text="Thêm"
+            android:textSize="22dp"
+
+            android:textColor="@color/white"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_weight="1"
+            android:id="@+id/btn_suaLoaisach"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="#4CAF50"
+            android:text="Sửa"
+            android:textSize="22dp"
+
+            android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DANH SÁCH LOẠI SÁCH"
+            android:textSize="25dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textColor="#F10000" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_loaisach"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+
+    </LinearLayout>
+
+</FrameLayout>
