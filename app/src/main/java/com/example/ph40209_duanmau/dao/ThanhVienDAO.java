@@ -71,6 +71,20 @@ public class ThanhVienDAO {
         }
         return 1;
     }
-    //abc
+
+//    public int delete_tt_ThanhVien(int matv){
+//        SQLiteDatabase sqLiteDatabase = dbHelper.getWritableDatabase();
+//        Cursor cursor = sqLiteDatabase.rawQuery("SELECT * FROM PHIEUMUON WHERE matv = ?", new String[]{String.valueOf(matv)});
+//        if (cursor.getCount() != 0){
+//            return -1;
+//        }
+//        long check = sqLiteDatabase.delete("THANHVIEN","matv = ?", new String[]{String.valueOf(matv)});
+//
+//        if (check == -1){
+//            return 0;
+//        }
+//        return 1;
+//    }
+
 
 }
